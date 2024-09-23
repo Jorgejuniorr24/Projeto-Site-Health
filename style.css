@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #263138;
+  background-color: #f6f8fa;
+}
+
+header {
+  background-color: #4CAF50; /* Cor principal alterada para verde */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 80px;
+}
+
+.logo {
+  max-width: 70px; /* Tamanho da logomarca ajustado para 70px */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+header nav a {
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 4px;
+  width: 25px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+main {
+  padding: 40px;
+}
+
+h1, h2, h3 {
+  margin-bottom: 16px;
+}
+
+#imc-form {
+  margin: 20px 0;
+}
+
+#resultado {
+  margin-top: 20px;
+}
+
+.duvida {
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.duvida p {
+  display: none; /* Oculta o parágrafo inicialmente */
+}
+
+.duvida.ativa p {
+  display: block; /* Mostra o parágrafo quando a dúvida está ativa */
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #4CAF50; /* Cor principal alterada para verde */
+  color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    padding: 24px 20px;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header .hamburger {
+    display: flex;
+  }
+
+  header .menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  header .menu a {
+    padding: 10px;
+  }
+}
+
+/* Bootstrap Overrides */
+.navbar-light .navbar-nav .nav-link {
+  color: #FFFFFF;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #A5D6A7; /* Cor alterada para um verde mais claro */
+}
+
+.card-header button {
+  color: #000000; /* Cor alterada para preto */
+  text-decoration: none;
+}
+
+.card-header button:hover {
+  color: #000000; /* Cor alterada para preto */
+}
+
+.btn-primary {
+  background-color: #4CAF50; /* Cor principal alterada para verde */
+  border-color: #4CAF50;
+}
+
+.btn-primary:hover {
+  background-color: #388E3C; /* Cor alterada para um verde mais escuro */
+  border-color: #388E3C;
+}
+
+/* Adicionando animações suaves */
+.menu a {
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #A5D6A7; /* Cor alterada para um verde mais claro */
+}
+
+.hamburger span {
+  transition: background-color 0.3s ease;
+}
+
+.hamburger:hover span {
+  background-color: #A5D6A7; /* Cor alterada para um verde mais claro */
+}

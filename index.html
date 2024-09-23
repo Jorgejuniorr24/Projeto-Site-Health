@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Vida Saudável</title>
+  <meta name="description" content="Dicas de saúde e cuidados pessoais para uma vida equilibrada">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="bg-primary text-white text-center py-3">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" id="hamburger" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link text-white" href="#inicio">Início</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#alimentacao">Alimentação</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#exercicios">Exercícios</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#saude-mental">Saúde Mental</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#imc">Calculadora de IMC</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mt-5">
+    <section id="inicio" class="text-center">
+      <h1>Cuide do seu corpo e mente para uma vida equilibrada</h1>
+      <p>Mantenha hábitos saudáveis e cuide do seu bem-estar físico e mental para uma vida plena.</p>
+      <img src="imagens/saude.jpg" alt="Saúde" class="img-fluid">
+    </section>
+
+    <section id="alimentacao" class="mt-5">
+      <h2>Alimentação Saudável</h2>
+      <p>Dicas sobre como manter uma dieta equilibrada e saudável.</p>
+      <ul>
+        <li>Varie os alimentos: Inclua em sua dieta frutas, legumes, verduras, grãos integrais, carnes magras, peixes, leguminosas e laticínios.</li>
+        <li>Priorize alimentos in natura: Dê preferência a alimentos frescos e minimamente processados.</li>
+        <li>Cozinhe em casa: Preparar suas próprias refeições permite controlar os ingredientes.</li>
+        <li>Controle as porções: Preste atenção ao tamanho das porções e evite comer por impulso.</li>
+        <li>Beba bastante água: A água é essencial para o bom funcionamento do organismo.</li>
+      </ul>
+      <img src="imagens/alimentacao.jpg" alt="Alimentação Saudável" class="img-fluid">
+    </section>
+
+    <section id="exercicios" class="mt-5">
+      <h2>Exercícios Físicos</h2>
+      <p>Sugestões de atividades físicas para diferentes perfis de usuários.</p>
+      <h3>Benefícios para o Corpo:</h3>
+      <ul>
+        <li>Controle do peso: A atividade física aumenta o gasto calórico e auxilia na queima de gordura.</li>
+        <li>Fortalecimento muscular e ósseo: Previna a osteoporose e aumente a força.</li>
+        <li>Melhora da saúde cardiovascular: Reduz o risco de doenças cardiovasculares.</li>
+        <li>Controle da glicemia: Auxilia na regulação dos níveis de açúcar no sangue.</li>
+        <li>Melhora da função pulmonar: Aumenta a capacidade pulmonar.</li>
+        <li>Fortalecimento do sistema imunológico: Estimula o sistema imunológico.</li>
+        <li>Melhora da qualidade do sono: Contribui para um sono mais profundo e reparador.</li>
+      </ul>
+      <img src="imagens/exercicios.jpg" alt="Exercícios Físicos" class="img-fluid">
+    </section>
+
+    <section id="saude-mental" class="mt-5">
+      <h2>Saúde Mental</h2>
+      <p>Estratégias para o cuidado da saúde mental e promoção do bem-estar emocional.</p>
+      <h3>Pratique o Autocuidado:</h3>
+      <ul>
+        <li>Descanso: Certifique-se de dormir o suficiente.</li>
+        <li>Alimentação saudável: Uma dieta equilibrada é essencial.</li>
+        <li>Hidratação: Beba bastante água ao longo do dia.</li>
+        <li>Atividades físicas: A prática regular de exercícios libera endorfinas.</li>
+      </ul>
+      <img src="imagens/saude-mental.jpg" alt="Saúde Mental" class="img-fluid">
+    </section>
+
+    <section id="imc" class="mt-5">
+      <h2>Calculadora de IMC</h2>
+      <form id="imc-form" class="form-inline justify-content-center">
+        <div class="form-group mx-2">
+          <label for="peso" class="sr-only">Peso (kg):</label>
+          <input type="number" id="peso" class="form-control" placeholder="Peso (kg)" required>
+        </div>
+        <div class="form-group mx-2">
+          <label for="altura" class="sr-only">Altura (m):</label>
+          <input type="number" id="altura" class="form-control" placeholder="Altura (m)" step="0.01" required>
+        </div>
+        <button type="submit" class="btn btn-primary mx-2">Calcular IMC</button>
+      </form>
+      <div id="resultado" class="mt-3 text-center"></div>
+    </section>
+
+    <section id="duvidas" class="mt-5">
+      <h2>Dúvidas Frequentes</h2>
+      <div class="accordion" id="accordionDuvidas">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Quais são os benefícios de uma alimentação saudável?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionDuvidas">
+            <div class="card-body">
+              Uma alimentação saudável pode melhorar sua saúde geral, aumentar a energia e ajudar na manutenção do peso.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Como posso iniciar uma rotina de exercícios?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionDuvidas">
+            <div class="card-body">
+              Comece com atividades que você gosta e aumente a intensidade gradualmente.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-primary text-white text-center py-3 mt-5">
+    <p>© Desenvolvido por Jorge Junior</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Menu hamburguer
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.querySelector('header .menu');
+
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+
+    // Calculadora de IMC
+    document.getElementById('imc-form').addEvent
